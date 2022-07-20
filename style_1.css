@@ -1,0 +1,300 @@
+/* ------------------------
+   importing google font
+-------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
+/* ---------------
+   font imported
+----------------- */
+
+/* ----------------------------------
+     apply style on header and main
+------------------------------------- */
+header, main{
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* ---------------------------------
+  applied style on header and main
+----------------------------------- */
+
+/* -----------------------------
+   header section style start
+------------------------------ */
+.header-info{
+    display: flex;
+    background-image: linear-gradient(gray, black);
+    color: white;
+    align-items: center;
+    border-radius: 15px;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    
+}
+/* -------------------------
+     animation section
+---------------------------- */
+@keyframes animate {
+    0%{
+        transform: scale(1) rotate(0deg);
+    }
+    25%{
+        transform: scale(0.75) rotate(90deg);
+    }
+    50%{
+        transform: scale(0.5) rotate(180deg);
+    }
+    75%{
+        transform: scale(0.25) rotate(270deg);
+    }
+    100%{
+        transform: scale(1) rotate(360deg);
+    }
+}
+.header-info:hover{
+    animation: animate 3s linear;
+}
+.header-detail{
+    width: 50%;
+    padding-left: 10%;
+}
+.header-title{
+    font-size: 6vh;
+    font-weight: 900;
+}
+.watch-live-link{
+    margin-top: 20px;
+}
+.watch-live-link a{
+    text-decoration: none;
+    color: white;
+    background-color: orangered;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+.header-detail img{
+    width: 90%;
+}
+/* -----------------------------
+   heading section style end
+----------------------------- */
+/* -------------------------------
+      main section style
+--------------------------------- */
+.menu-blog{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-column-gap: 15px;
+}
+.charts{
+    margin-top: 50px;
+    font-family: 'Poppins', sans-serif;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    width: 200px;
+    height: 180px;
+}
+.menu a{
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    text-align: center;
+    font-weight: 700;
+    width: 140px;
+    border: 1px solid black;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+#highlight{
+    background-image: radial-gradient(blue, skyblue);
+    color: white;
+}
+
+/* ----------------
+  style of blogs
+----------------- */
+.all-blogs, .all-match{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    margin-top: 50px;
+}
+.match{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    box-shadow: 1px 1px gray;
+    border-radius: 10px;
+}
+.face-off{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    justify-content: space-evenly;
+    grid-column-gap: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.face-off img{
+    width: 100%;
+}
+.vs{
+    text-align: center;
+}
+.blogs{
+    box-shadow: 0.5px 0.5px gray;
+    border-radius: 10px;
+}
+.blog-image img{
+    width: 100%;
+}
+.blog-detail{
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.comments{
+    margin-left: 30px;
+}
+
+/* ----------------
+    footer style
+------------------- */
+footer{
+    margin-top: 60px;
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding-top: 50px;
+    padding-bottom: 80px;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+}
+footer hr{
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    opacity: 0.15;
+}
+footer a{
+    text-decoration: none;
+    color: white;;
+}
+.anchor{
+    display: flex;
+    flex-direction: row;
+    margin-left: 10%;
+    margin-right: 10%;
+    justify-content: space-evenly;
+}
+.social-media{
+    visibility: hidden;
+}
+/* --------------------------
+     media query for mobile
+----------------------------- */
+@media screen and (max-width: 688px) {
+    header{
+        width: 100%;
+    }
+    .header-info{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
+    .header-detail{
+        text-align: center;
+    }
+    .watch-live-link{
+        margin-bottom: 10px;
+    }
+    .menu-blog{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
+    .charts{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .menu{
+        background-color: white;
+    }
+    .all-blogs, .all-match{
+        margin-top: 0px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    footer{
+        margin-top: 20px;
+        text-align: center;
+        color: white;
+        background-color: black;
+    }
+    .anchor{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .anchor div{
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .social-media{
+        visibility: visible;
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(3, 50px);
+        justify-content: center;
+    }
+}
+/* ----------------------------
+   media query for tablet
+----------------------------- */
+@media screen and (min-width: 689px) and (max-width: 992px) {
+    .menu-blog{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
+    .menu-blog{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
+    .charts{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .menu{
+        background-color: white;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 10px;
+    }
+    .all-blogs, .all-match{
+        margin-top: 0px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .anchor{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        grid-row-gap: 15px;
+    }
+}
