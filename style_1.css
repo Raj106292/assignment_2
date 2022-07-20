@@ -127,19 +127,27 @@ header, main{
 /* ----------------
   style of blogs
 ----------------- */
-.all-blogs, .all-match{
+.all-blogs, .all-match, .groups{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 15px;
     grid-row-gap: 15px;
     margin-top: 50px;
 }
-.match{
+.groups{
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+}
+.match, .group{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     justify-items: center;
     box-shadow: 1px 1px gray;
     border-radius: 10px;
+}
+.team{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20px;
 }
 .face-off{
     display: grid;
@@ -235,7 +243,7 @@ footer a{
     .menu{
         background-color: white;
     }
-    .all-blogs, .all-match{
+    .all-blogs, .all-match, .groups{
         margin-top: 0px;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -286,7 +294,7 @@ footer a{
         grid-template-columns: repeat(3, 1fr);
         grid-column-gap: 10px;
     }
-    .all-blogs, .all-match{
+    .all-blogs, .all-match, .groups{
         margin-top: 0px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
